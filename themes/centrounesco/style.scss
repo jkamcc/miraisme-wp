@@ -1,0 +1,107 @@
+/*!
+ Theme Name:   Centro Unesco Storefront
+ Theme URI:    https://woocommerce.com/storefront
+ Description:  WooCommerce Storefront Child Theme
+ Author:       Juan Camilo Casas
+ Author URI:   https://github.com/jkamcc
+ Template:     storefront
+ Version:      0.0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  centrounesco
+*/
+
+/* Base Theme Changes */
+
+$custom-base-font:				Georgia, "Times New Roman", Times, serif;
+$custom-body-background: 		#0288D1;
+$custom-font-color: 			#333333;
+$font-color-menu: 				#FAFAFA;
+$light-background: 				#F2F2F2;
+
+body,
+button,
+input,
+textarea {	
+	font-family: $custom-base-font;	
+}
+
+select {
+	font-family: $custom-base-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $custom-font-color;
+}
+
+.site-header, .secondary-navigation ul ul, .main-navigation ul.menu > li.menu-item-has-children:after, .secondary-navigation ul.menu ul, .storefront-handheld-footer-bar, .storefront-handheld-footer-bar ul li > a, .storefront-handheld-footer-bar ul li.search .site-search, button.menu-toggle, button.menu-toggle:hover {
+	background-color: $custom-body-background;
+}
+
+.site-footer {
+	background-color: $light-background;
+	color: $custom-font-color; 
+}
+
+ul.products li.product.product-category .woocommerce-loop-category__title, ul.products li.product.product-category h2, ul.products li.product.product-category h3 {
+    font-size: 1.2em;
+    background-color: $custom-body-background;
+    color: $font-color-menu;
+    mark.count {
+    	color: $font-color-menu;
+    }
+}
+
+.main-navigation ul li a, .site-title a, ul.menu li a, .site-branding h1 a, .site-footer .storefront-handheld-footer-bar a:not(.button), button.menu-toggle, button.menu-toggle:hover {
+	color: $font-color-menu;
+}
+
+/* Custom Changes */
+
+.site-header .site-branding {
+	width: 100%;
+}
+
+.site-info {
+	.copyright-brand {
+		display: block;
+		padding-bottom: 10px;
+		font-weight: bold;		
+	}
+	.copyright-info {		
+	    text-align: justify;	    	    
+	}
+	.woocommerce-reference {
+		float: right;
+		font-size: small;
+		a {
+			color: #A5A6AA;
+		}
+	}	
+}
+
+.site-header-cart {
+	display: none;
+}
+.site-search {
+		display: none;
+}
+
+body.home {	
+	.entry-header{
+		display: none; 
+	}	
+
+	.info-box-row .ffs-info-box .infobox-text {
+		font-size: inherit !important;
+	}
+}
+
+img.aligncenter.size-large.wp-image-163 {
+	width: 100%;
+}
+img.aligncenter.size-full.wp-image-345 {
+	width: 100%;
+}
+

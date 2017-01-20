@@ -1,0 +1,7 @@
+index.php
+languages/
+plugins/*
+!plugins/centrounesco-courses-discounts/
+themes/*
+!themes/centrounesco/
+uploads/
