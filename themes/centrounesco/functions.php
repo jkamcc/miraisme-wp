@@ -48,9 +48,21 @@ function storefront_credit() {
 function storefront_site_branding() {
 	?>
 	<div class="site-branding">
-		<?php storefront_site_title_or_logo(); ?>
+		<div>
+			<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/images/unesco_logo.png')?>">
+			<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/images/miraisme_logo.png')?>">
+		</div>
+		<div class="heading-title">
+			<span>Maestrías &amp;</span><span>Diplomados</span>
+		</div>
+		
 	</div>
-	<div class="extra-information">
+	<div class="site-title">
+		<h1>
+			<span class="heading-title">Convenio</span>
+			Fundación Centro UNESCO <span class="and">&amp;</span> Asociación MIRAISMO Internacional
+		</h1>
+		<h2>Formación en Derechos Humanos, Ciudadanía Mundial, Cultura y Paz</h2> 		
 	</div>
 	<?php
 }

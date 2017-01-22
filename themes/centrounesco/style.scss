@@ -15,10 +15,11 @@
 /* Base Theme Changes */
 
 $custom-base-font:				Georgia, "Times New Roman", Times, serif;
-$custom-body-background: 		#0288D1;
+$custom-color-body: 			#0288D1;
 $custom-font-color: 			#333333;
 $font-color-menu: 				#FAFAFA;
 $light-background: 				#F2F2F2;
+$header-background:				#003366;
 
 body,
 button,
@@ -35,8 +36,93 @@ h1, h2, h3, h4, h5, h6 {
 	color: $custom-font-color;
 }
 
-.site-header, .secondary-navigation ul ul, .main-navigation ul.menu > li.menu-item-has-children:after, .secondary-navigation ul.menu ul, .storefront-handheld-footer-bar, .storefront-handheld-footer-bar ul li > a, .storefront-handheld-footer-bar ul li.search .site-search, button.menu-toggle, button.menu-toggle:hover {
-	background-color: $custom-body-background;
+a {
+	color: $custom-color-body;	
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.added_to_cart {	
+	background-color: $light-background;
+	border-color: $light-background;
+	color: $custom-font-color;
+}	
+
+.secondary-navigation ul ul, .main-navigation ul.menu > li.menu-item-has-children:after, .secondary-navigation ul.menu ul, .storefront-handheld-footer-bar, .storefront-handheld-footer-bar ul li > a, .storefront-handheld-footer-bar ul li.search .site-search, button.menu-toggle, button.menu-toggle:hover {
+	background-color: $custom-color-body;
+}
+
+.heading-title {
+	color: #ff9900;
+	line-height: 90%;		
+	font-weight: bold;
+	text-shadow: 2px 2px 4px $custom-font-color;		
+}
+
+
+.site-header {
+	padding: 1em 0 0 0;			
+	background-image: url("images/header_background.jpg") !important;
+	background-repeat: repeat;
+	background-size: 20%;
+	background-color: $header-background;
+
+	h1, h2 {		
+		color: #fff;	
+		font-weight: bold;
+		text-shadow: 2px 2px 4px $custom-font-color;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 18px;
+		letter-spacing: -1px;
+	}
+
+	.site-branding, .site-title {
+		display: inline-block;
+	}	
+
+	.site-branding {
+		margin-left: -25px;
+		.heading-title {
+			font-size: 32px;
+			font-family: "Gill Sans";
+			span {
+				display: block;
+			}			
+		}	
+		img {
+			display: inline-block;
+		}
+	}
+
+	.site-title {
+		width: 70%;
+		text-align: center;
+		h1 {
+			line-height: 0;
+			margin-top: 5%;
+			span:first-child {
+				display: block;
+				text-align: center;
+				font-size: 42px;
+				padding-bottom: 20px;		
+			}
+			.and {
+				padding: 0 10px;
+			}
+		}
+	}				
+					
+	ul.menu li.current-menu-item > a {
+		color: black;		
+	}	
 }
 
 .site-footer {
@@ -46,39 +132,54 @@ h1, h2, h3, h4, h5, h6 {
 
 ul.products li.product.product-category .woocommerce-loop-category__title, ul.products li.product.product-category h2, ul.products li.product.product-category h3 {
     font-size: 1.2em;
-    background-color: $custom-body-background;
+    background-color: $custom-color-body;
     color: $font-color-menu;
     mark.count {
     	color: $font-color-menu;
     }
 }
 
-.main-navigation ul li a, .site-title a, ul.menu li a, .site-branding h1 a, .site-footer .storefront-handheld-footer-bar a:not(.button), button.menu-toggle, button.menu-toggle:hover {
+.main-navigation ul li a, ul.menu li a, .site-branding h1 a, .site-footer .storefront-handheld-footer-bar a:not(.button), button.menu-toggle, button.menu-toggle:hover {
 	color: $font-color-menu;
+}
+
+.main-navigation ul li a:hover {
+	color: $header-background;
+}
+
+.storefront-primary-navigation {	
+	background-color: #dfdfdf;
+	background-image: none;
+}
+
+.main-navigation ul li a {
+	color: #000000;
+    text-shadow: 0 1px 1px #999999;
+    font-size: 17px;
+    font-family: "Gill Sans";
 }
 
 /* Custom Changes */
 
-.site-header .site-branding {
-	width: 100%;
-}
-
 .site-info {
+	font-size: 12px;
+
 	.copyright-brand {
 		display: block;
 		padding-bottom: 10px;
+		font-size: 16px;
 		font-weight: bold;		
 	}
 	.copyright-info {		
 	    text-align: justify;	    	    
 	}
 	.woocommerce-reference {
-		float: right;
-		font-size: small;
+		float: right;		
 		a {
 			color: #A5A6AA;
 		}
-	}	
+	}
+
 }
 
 .site-header-cart {
@@ -103,5 +204,30 @@ img.aligncenter.size-large.wp-image-163 {
 }
 img.aligncenter.size-full.wp-image-345 {
 	width: 100%;
+}
+
+img.attachment-shop_single.size-shop_single.wp-post-image {
+    width: 100%;
+}
+
+.price {
+	visibility: collapse;
+
+	del {
+		display: none;	
+	}
+			
+	span.woocommerce-Price-amount {
+		visibility: visible;
+
+		&:first-child:before {
+		content: "Desde ";
+
+		}
+		&:nth-child(2) {
+			display: none;
+		}
+	}		
+	
 }
 
