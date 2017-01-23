@@ -1,0 +1,60 @@
+@media only screen and (min-width: $tablet) {
+	.site-header {
+		.site-title-sm {
+			display: none;
+		}
+	}
+}
+
+/*  Tablet Layout: 768px. */
+@media only screen and (max-width: $tablet) {
+
+
+	.site-header {		
+
+		.site-title{
+			display: none;
+		}
+		.site-branding {
+			margin-bottom: 10px;
+			.heading-title {
+				font-size: 20px;				
+			}
+			img {
+				max-width: 30%;
+			}
+		}
+		.site-title-sm {
+			display: inline-block;
+			float: right;
+			h1 {
+				font-size: 23px;
+				text-align: center;
+				line-height: 20px;	
+				span {
+					display: block;
+				}
+			}						
+		}
+
+		.storefront-primary-navigation {
+			background-color: rgba(0, 0, 0, 0);
+						
+			.menu {
+				background-color: #dfdfdf;
+			}
+		}
+		.main-navigation ul {
+			margin-left: 5px;
+		}
+		button.menu-toggle {
+			clear: right;
+		}
+	}
+
+	.woocommerce-active .site-header .main-navigation {
+		width: 100%;
+	}
+}
+
+

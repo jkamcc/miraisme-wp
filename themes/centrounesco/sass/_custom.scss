@@ -1,0 +1,42 @@
+/* Custom Theme Changes */
+
+img.aligncenter.size-large.wp-image-163 {
+	width: 100%;
+}
+img.aligncenter.size-full.wp-image-345 {
+	width: 100%;
+}
+
+img.attachment-shop_single.size-shop_single.wp-post-image {
+    width: 100%;
+}
+
+.price {
+	visibility: collapse;
+
+	del {
+		display: none;	
+	}
+			
+	span.woocommerce-Price-amount {
+		visibility: visible;
+
+		&:first-child:before {
+		content: "Desde ";
+
+		}
+		&:nth-child(2) {
+			display: none;
+		}
+	}			
+}
+
+body.home {	
+	.entry-header{
+		display: none; 
+	}	
+
+	.info-box-row .ffs-info-box .infobox-text {
+		font-size: inherit !important;
+	}
+}
