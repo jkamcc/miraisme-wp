@@ -22,7 +22,10 @@ function storefront_credit() {
 	?>
 	<div class="site-info">
 		<b class="copyright-brand">
-			<?php echo esc_html( apply_filters( 'storefront_copyright_text', $content = '&copy; ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' )) ); ?>
+			<a href="http://www.amigosmira.es/contacto/" target="_blank">
+				<?php echo esc_html( apply_filters( 'storefront_copyright_text', $content = '&copy; ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' )) );?>
+			</a>
+			
 		</b>
 		<p class="copyright-info">
 			<?php 
