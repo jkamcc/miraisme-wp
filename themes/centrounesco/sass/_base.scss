@@ -15,6 +15,26 @@ h1, h2, h3, h4, h5, h6 {
 	color: $custom-font-color;
 }
 
+h1, 
+.alpha {
+	font-size: 2em;
+}
+
+h2, 
+.beta {
+	font-size: ms(3);
+}
+
+h3,
+.gamma {
+	font-size: ms(2);
+}
+
+h4,
+.delta {
+	font-size: 1.2em;
+}
+
 a {
 	color: $custom-color-body;	
 }
@@ -67,7 +87,7 @@ ul.products li.product.product-category .woocommerce-loop-category__title, ul.pr
 		background-color: $header-menu-background;
 	}  
 	ul.nav-menu>li>a {
-		padding: 12px 0 12px 30px;
+		padding: 12px 15px 12px 15px;
 	}
 }
 

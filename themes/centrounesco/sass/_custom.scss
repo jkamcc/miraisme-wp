@@ -11,32 +11,38 @@ img.attachment-shop_single.size-shop_single.wp-post-image {
     width: 100%;
 }
 
-.price {
-	visibility: collapse;
+.related.products, .entry-summary > div {
+	.price {
+		visibility: collapse;
 
-	del {
-		display: none;	
-	}
-			
-	span.woocommerce-Price-amount {
-		visibility: visible;
-
-		&:first-child:before {
-		content: "Desde ";
-
+		del {
+			display: none;	
 		}
-		&:nth-child(2) {
-			display: none;
-		}
-	}			
+				
+		span.woocommerce-Price-amount {
+			visibility: visible;
+
+			&:first-child:before {
+			content: "Desde ";
+
+			}
+			&:nth-child(2) {
+				display: none;
+			}
+		}			
+	}	
 }
 
 body.home {	
-	.entry-header{
+	.entry-header {
 		display: none; 
 	}	
 
 	.info-box-row .ffs-info-box .infobox-text {
 		font-size: inherit !important;
 	}
+}
+
+.post .entry-meta {
+	display: none;
 }

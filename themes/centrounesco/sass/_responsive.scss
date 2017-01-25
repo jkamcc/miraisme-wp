@@ -1,18 +1,24 @@
-@media only screen and (min-width: $tablet) {
-	.site-header {
-		.site-title-sm {
-			display: none;
-		}
-	}
-	.woocommerce-active .site-header .main-navigation {
-		width: 100%;
-	}
+/* Mobile layout */
+
+@media (min-width: $mobile) {
+	.site-footer .woocommerce-reference {
+		margin-bottom: ms(1);
+	}	
 }
 
-/*  Tablet Layout: 768px. */
+/* Tablet, desktop */
+@media (min-width: $tablet) {
+	.site-footer .woocommerce-reference {
+		margin-bottom: 0;
+	}
+	.hentry.type-post .entry-content {
+		float: left;
+		width: 100%;
+	}	
+}
+
+/*  Mobile and portrait tablet layout */
 @media only screen and (max-width: $tablet) {
-
-
 	.site-header {		
 
 		.site-title{
@@ -56,7 +62,18 @@
 		button.menu-toggle {
 			clear: right;
 		}
-	}	
+	}		
 }
 
+/* Desktop layout*/
+@media only screen and (min-width: $tablet) {
+	.site-header {
+		.site-title-sm {
+			display: none;
+		}
+	}
+	.woocommerce-active .site-header .main-navigation {
+		width: 100%;
+	}
+}
 

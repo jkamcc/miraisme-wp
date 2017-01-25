@@ -8,8 +8,11 @@ $light-background: 				#F2F2F2;
 $header-background:				#003366;
 $header-menu-background:		#dfdfdf;
 
-//bootstrap
+//modularscale
+$ms-base:           			1em, .875em;
+$ms-ratio:          			1.618;
+
+//responsive measures
 $desktop:						1025px;
 $tablet:						768px;
-//<
-$mobile_portrait:				544px;
+$mobile:						320px;
