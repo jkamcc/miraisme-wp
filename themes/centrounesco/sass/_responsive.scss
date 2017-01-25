@@ -4,6 +4,9 @@
 			display: none;
 		}
 	}
+	.woocommerce-active .site-header .main-navigation {
+		width: 100%;
+	}
 }
 
 /*  Tablet Layout: 768px. */
@@ -44,17 +47,16 @@
 				background-color: #dfdfdf;
 			}
 		}
-		.main-navigation ul {
-			margin-left: 5px;
-		}
+		.main-navigation {			
+			>.menu ul>li>a{
+				margin-left: 5px;
+			}
+		}		
+
 		button.menu-toggle {
 			clear: right;
 		}
-	}
-
-	.woocommerce-active .site-header .main-navigation {
-		width: 100%;
-	}
+	}	
 }
 
 
