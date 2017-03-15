@@ -29,7 +29,7 @@ function storefront_credit() {
 		</b>
 		<p class="copyright-info">
 			<?php 
-				$copyright_text_message = 'Los Cursos Centro UNESCO son impartidos por la Fundación Centro UNESCO para la formación en Derechos Humanos, Ciudadanía Mundial y Cultura de Paz. Esto a través del convenio suscrito con la Asociación Miraísmo Internacional. La titulación obtenida cuenta con el aval de otras instituciones educativas internacionales. Estos títulos son de carácter propio, en el marco de la formación no reglada en España, según Ley Orgánica 8/2013, de 9 de Diciembre, para la mejora de la calidad educativa. Los títulos no facilitan acceso a Masters, Doctorados, Concursos u Oposiciones.';
+				$copyright_text_message = 'Los cursos son impartidos por el Centro Internacional para la Formación en Derechos Humanos, Ciudadanía Mundial y Cultura de Paz. Esto a través del convenio celebrado con la Asociación Miraísmo Internacional, La titulación obtenida cuenta con el aval de instituciones educativas. Estos títulos son de carácter propio, en el marco de la formación no reglada en España, según Ley Orgánica 8/2013, de 9 de Diciembre, para la mejora de la calidad educativa. Los títulos no facilitan acceso a Másters, Doctorados, Concursos u Oposiciones.';
 				echo esc_html($copyright_text_message);
 			?>
 		</p>
