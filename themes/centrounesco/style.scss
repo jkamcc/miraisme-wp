@@ -12,10 +12,10 @@
  Text Domain:  centrounesco
 */
 
-@import 'sass/utils/variables';
+@import 'assets/sass/utils/variables';
 @import 'node_modules/susy/sass/susy';
-@import 'sass/vendors/modular-scale';
+@import 'assets/sass/vendors/modular-scale';
 
-@import 'sass/base';
-@import 'sass/responsive';
-@import 'sass/custom';
+@import 'assets/sass/base';
+@import 'assets/sass/responsive';
+@import 'assets/sass/custom';

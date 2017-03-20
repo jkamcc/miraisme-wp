@@ -2,6 +2,7 @@ index.php
 languages/
 plugins/*
 !plugins/centrounesco-courses-discounts/
-themes/*
+#themes/*
 !themes/centrounesco/
+!themes/storefront/
 uploads/

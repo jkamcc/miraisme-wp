@@ -138,7 +138,8 @@ module.exports = function( grunt ) {
 					'assets/sass/base/*.scss',
 					'assets/sass/components/*.scss',
 					'assets/sass/utils/*.scss',
-					'assets/sass/vendors/*.scss'
+					'assets/sass/vendors/*.scss',
+					'assets/sass/*.scss'
 				],
 				tasks: [
 					'sass',
@@ -232,7 +233,7 @@ module.exports = function( grunt ) {
 					'!.DS_Store',
 					'!npm-debug.log'
 				],
-				dest: 'storefront',
+				dest: 'formacion_derechos_humanos',
 				expand: true,
 				dot: true
 			}

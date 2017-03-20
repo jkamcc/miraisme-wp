@@ -29,7 +29,7 @@ function storefront_credit() {
 		</b>
 		<p class="copyright-info">
 			<?php 
-				$copyright_text_message = 'Los cursos son impartidos por el Centro Internacional para la Formación en Derechos Humanos, Ciudadanía Mundial y Cultura de Paz. Esto a través del convenio celebrado con la Asociación Miraísmo Internacional, La titulación obtenida cuenta con el aval de instituciones educativas. Estos títulos son de carácter propio, en el marco de la formación no reglada en España, según Ley Orgánica 8/2013, de 9 de Diciembre, para la mejora de la calidad educativa. Los títulos no facilitan acceso a Másters, Doctorados, Concursos u Oposiciones.';
+				$copyright_text_message = 'Los cursos son impartidos por el Centro Internacional para la Formación en Derechos Humanos, Ciudadanía Mundial y Cultura de Paz. La titulación obtenida cuenta con el aval de reconocidas instituciones educativas. Se tratan de títulos de carácter propio, en el marco de la formación no reglada en España, según Ley Orgánica 8/2013, de 9 de Diciembre, para la mejora de la calidad educativa. Por lo anterior, los títulos no facilitan acceso a Masters, Doctorados, Concursos u Oposiciones.';
 				echo esc_html($copyright_text_message);
 			?>
 		</p>
@@ -50,24 +50,26 @@ function storefront_credit() {
  */
 function storefront_site_branding() {
 	?>
-	<div class="site-branding">		
-		<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/images/unesco_logo.png')?>">
-		<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/images/miraisme_logo.png')?>">		
-		<div class="heading-title">
-			<span>Maestrías &amp;</span><span>Diplomados</span>
+
+	<div class="blue-box left row-fluid">
+		<div>
+			<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/miraisme_logo.png')?>">		
 		</div>
-		
 	</div>
-	<div class="site-title">
+	<div class="row-fluid">
 		<h1>
-			<span class="heading-title">Convenio</span>
-			Fundación Centro UNESCO <span class="and">&amp;</span> Asociación MIRAISMO Internacional
+			<span class="row">Centro Internacional</span>
+			<span class="row">Formación en Derechos Humanos</span>
+			<span class="row">Ciudadanía Mundial y Cultura de Paz</span>
 		</h1>
-		<h2>Formación en Derechos Humanos, Ciudadanía Mundial, Cultura y Paz</h2> 		
+		<h2>Diplomados y Maestrías</h2>
 	</div>
-	<div class="site-title-sm">
-		<h1><span class="heading-title">Convenio</span>FCU - AMI</h1>	
+	<div class="blue-box right row-fluid">
+		<div>
+			<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/miraisme_logo.png')?>">
+		</div>
 	</div>
+	
 	<?php
 }
 
