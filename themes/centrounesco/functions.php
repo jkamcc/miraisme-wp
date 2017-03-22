@@ -50,24 +50,40 @@ function storefront_credit() {
  */
 function storefront_site_branding() {
 	?>
-
-	<div class="blue-box left row-fluid">
+	<div class="sm md-hidden">
 		<div>
-			<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/miraisme_logo.png')?>">		
+			<div class="row-fluid">
+				<img class="" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/miraisme_logo.png')?>">				
+			</div>
+			<div class="row-fluid site-title">
+				<h1>
+					<span class="row">Centro Internacional</span>
+					<span class="row">FDH</span>			
+				</h1>
+				<h6 class="md-hidden">Formación de Alta Calidad</h6>							
+			</div>			
 		</div>
-	</div>
-	<div class="row-fluid">
-		<h1>
-			<span class="row">Centro Internacional</span>
-			<span class="row">Formación en Derechos Humanos</span>
-			<span class="row">Ciudadanía Mundial y Cultura de Paz</span>
-		</h1>
 		<h2>Diplomados y Maestrías</h2>
 	</div>
-	<div class="blue-box right row-fluid">
-		<div>
-			<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/miraisme_logo.png')?>">
+	<div class="md">
+		<div class="blue-box left row-fluid">
+			<div>
+				<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/miraisme_logo.png')?>">		
+			</div>
 		</div>
+		<div class="row-fluid title-container">
+			<h1 class="sm-hidden">
+				<span class="row">Centro Internacional</span>
+				<span class="row">Formación en Derechos Humanos</span>
+				<span class="row">Ciudadanía Mundial y Cultura de Paz</span>
+			</h1>
+			<h2>Diplomados y Maestrías</h2>
+		</div>
+		<div class="blue-box right row-fluid">
+			<div>
+				<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/miraisme_logo.png')?>">
+			</div>
+		</div>		
 	</div>
 	
 	<?php

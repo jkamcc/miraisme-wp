@@ -1,13 +1,20 @@
 /* Mobile layout */
 
 @media (min-width: $mobile) {
+	
 	.site-footer .woocommerce-reference {
 		margin-bottom: ms(1);
-	}	
+	}
+
 }
 
 /* Tablet, desktop */
-@media (min-width: $tablet) {
+@media (min-width: 769px) {
+	
+	.md-hidden {
+		display: none;
+	}
+	
 	.site-footer .woocommerce-reference {
 		margin-bottom: 0;
 	}
@@ -19,59 +26,102 @@
 
 /*  Mobile and portrait tablet layout */
 @media only screen and (max-width: $tablet) {
-	.site-header {		
+	.sm-hidden {
+		display: none;
+	}
+	.site-header {
+		.sm {
+			.row-fluid {
+				width: inherit;
+			}
+			.site-title {
+				max-width: 60%;	
+			}
 
-		.site-title{
-			display: none;
-		}
-		.site-branding {
-			margin-bottom: 10px;
-			.heading-title {
-				font-size: 20px;				
-			}
-			img {
-				max-width: 30%;
-			}
-		}
-		.site-title-sm {
-			display: inline-block;
-			float: right;
-			h1 {
-				font-size: 23px;
-				text-align: center;
-				line-height: 20px;	
-				span {
-					display: block;
+			h1 {			
+				margin: 0;
+				.row:first-child {
+					font-size: ms(1);
 				}
-			}						
+			}
+			h2 {
+				text-align: left;	
+			}
+			h6 {
+				font-size: ms(1);
+				text-align: center;
+			}
+
+			.blue-box {
+				display: none;
+			}
+			
+		}
+		.md {
+			display:  none;
+		}
+		.storefront-primary-navigation {
+			background: #ffffff url("assets/images/mosaico.png") / 15% repeat;
 		}
 
-		.storefront-primary-navigation {
-			background-color: rgba(0, 0, 0, 0);
-						
-			.menu {
-				background-color: #dfdfdf;
-			}
-		}
 		.main-navigation {			
 			>.menu ul>li>a{
 				margin-left: 5px;
+				color: black;
 			}
 		}		
 
-		button.menu-toggle {
-			clear: right;
-		}
-	}		
+	}
+
+	// .site-header {		
+
+	// 	.site-title{
+	// 		display: none;
+	// 	}
+	// 	.site-branding {
+	// 		margin-bottom: 10px;
+	// 		.heading-title {
+	// 			font-size: 20px;				
+	// 		}
+	// 		img {
+	// 			max-width: 30%;
+	// 		}
+	// 	}
+	// 	.site-title-sm {
+	// 		display: inline-block;
+	// 		float: right;
+	// 		h1 {
+	// 			font-size: 23px;
+	// 			text-align: center;
+	// 			line-height: 20px;	
+	// 			span {
+	// 				display: block;
+	// 			}
+	// 		}						
+	// 	}
+
+	// 	.storefront-primary-navigation {
+	// 		background-color: rgba(0, 0, 0, 0);
+						
+	// 		.menu {
+	// 			background-color: #dfdfdf;
+	// 		}
+	// 	}
+	// 	.main-navigation {			
+	// 		>.menu ul>li>a{
+	// 			margin-left: 5px;
+	// 		}
+	// 	}		
+
+	// 	button.menu-toggle {
+	// 		clear: right;
+	// 	}
+	// }		
 }
 
 /* Desktop layout*/
 @media only screen and (min-width: $tablet) {
-	.site-header {
-		.site-title-sm {
-			display: none;
-		}
-	}
+
 	.woocommerce-active .site-header .main-navigation {
 		width: 100%;
 	}
