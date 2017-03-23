@@ -1,4 +1,4 @@
-/* Mobile layout */
+/* From Mobile layout */
 
 @media (min-width: $mobile) {
 	
@@ -8,20 +8,51 @@
 
 }
 
-/* Tablet, desktop */
-@media (min-width: 769px) {
-	
-	.md-hidden {
-		display: none;
+/* Only Mobile */
+@media (max-width: $handheld) {
+
+	h2 {
+		text-align: left;
 	}
-	
-	.site-footer .woocommerce-reference {
-		margin-bottom: 0;
+
+	.row-fluid {
+		width: inherit;
 	}
-	.hentry.type-post .entry-content {
-		float: left;
-		width: 100%;
-	}	
+
+	.site-header {
+		.blue-box {
+			max-width: 20%;
+			img {
+				margin-left: 1.5em;
+			}
+			&.right {
+				display: none;
+			}
+		}
+		.title-container {
+			width: 80%;
+			float: right;
+			padding: 10px 0;
+		}
+
+		h4 {
+			font-size: ms(1);
+		}
+	}
+
+
+
+	.storefront-primary-navigation {
+		background: #ffffff url("assets/images/mosaico.png") / 15% repeat;
+	}
+
+	.main-navigation {			
+		>.menu ul>li>a{
+			margin-left: 5px;
+			color: black;
+		}
+	}
+
 }
 
 /*  Mobile and portrait tablet layout */
@@ -30,47 +61,22 @@
 		display: none;
 	}
 	.site-header {
-		.sm {
-			.row-fluid {
-				width: inherit;
-			}
-			.site-title {
-				max-width: 60%;	
-			}
+		
+		.site-title {
+			max-width: 60%;	
+		}
 
-			h1 {			
-				margin: 0;
-				.row:first-child {
-					font-size: ms(1);
-				}
-			}
-			h2 {
-				text-align: left;	
-			}
-			h6 {
+		h1 {			
+			margin: 0;
+			.row:first-child {
 				font-size: ms(1);
-				text-align: center;
 			}
-
-			.blue-box {
-				display: none;
-			}
-			
-		}
-		.md {
-			display:  none;
-		}
-		.storefront-primary-navigation {
-			background: #ffffff url("assets/images/mosaico.png") / 15% repeat;
 		}
 
-		.main-navigation {			
-			>.menu ul>li>a{
-				margin-left: 5px;
-				color: black;
-			}
-		}		
+	}
 
+	.woocommerce-active .site-header .main-navigation {
+		width: 100%;
 	}
 
 	// .site-header {		
@@ -120,10 +126,18 @@
 }
 
 /* Desktop layout*/
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: 769px) {
 
-	.woocommerce-active .site-header .main-navigation {
+	.site-footer .woocommerce-reference {
+		margin-bottom: 0;
+	}
+	.hentry.type-post .entry-content {
+		float: left;
 		width: 100%;
 	}
-}
 
+	.md-hidden {
+		display: none;
+	}
+
+}

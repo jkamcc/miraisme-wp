@@ -86,7 +86,7 @@ ul.products li.product.product-category .woocommerce-loop-category__title, ul.pr
 		max-width: 100%;
 	}
 
-	h1, h2 {
+	h1, h2, h4 {
 		text-align: center;
 		color: #330000;
 		font-family: "Calisto MT";
@@ -99,6 +99,7 @@ ul.products li.product.product-category .woocommerce-loop-category__title, ul.pr
 		font-style: italic;
 		line-height: 0.5;
 	}
+
 	.row {
 		display: block;
 		&:first-child {
@@ -146,13 +147,17 @@ ul.products li.product.product-category .woocommerce-loop-category__title, ul.pr
 		}
 	}
 
+	button.menu-toggle {
+		background-color: $header-menu-background;
+	}
+
 	.site-header-cart, .site-search {
 		display: none;
 	}
 }
 
 .storefront-primary-navigation {	
-	margin: 0;
+	margin: 10px 0 0 0;
 	padding: 0 2em;
 	border-radius: 50px 50px 0 0;
 	background: $header-menu-background url("assets/images/mosaico.png") / 15% repeat;
